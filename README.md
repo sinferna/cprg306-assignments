@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Project Title
+
+CPRG306 Assignmments
+
+## Description
+
+Assignments covered in web development 2
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
 ## Getting Started
 
 First, run the development server:

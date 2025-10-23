@@ -80,7 +80,7 @@ export default function NewItem({ onAddItem }) {
         <div className="flex flex-row items-center gap-3">
           <button
             type="button"
-            className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-700 disabled:bg-gray-500 text-white text-xl font-bold rounded-full"
+            className="w-10 h-10 flex items-center justify-center bg-gray-600 hover:bg-gray-700 disabled:bg-gray-500 text-white text-xl font-bold rounded-full"
             onClick={decrement}
             disabled={quantity === 1}
           >
@@ -91,7 +91,7 @@ export default function NewItem({ onAddItem }) {
 
           <button
             type="button"
-            className="w-12 h-12 flex items-center justify-center bg-sky-500 hover:bg-sky-700 disabled:bg-sky-600 text-white text-xl font-bold rounded-full"
+            className="w-10 h-10 flex items-center justify-center bg-sky-500 hover:bg-sky-700 disabled:bg-sky-600 text-white text-xl font-bold rounded-full"
             onClick={increment}
             disabled={quantity === 20}
           >

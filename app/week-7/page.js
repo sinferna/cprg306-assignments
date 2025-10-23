@@ -22,16 +22,13 @@ export default function Page() {
       <main
         className="relative min-h-screen bg-cover bg-center"
       >
-        {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Foreground content */}
         <div className="relative z-10 p-6">
           <h1 className="text-5xl font-bold text-center mb-6 text-white">
             ShopMe<sup>©</sup>
           </h1>
 
-          {/* Content stack */}
           <div className="flex flex-col items-center gap-6">
             <NewItem onAddItem={handleAddItem} />
             <ItemList items={items} />

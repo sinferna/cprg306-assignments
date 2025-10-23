@@ -40,18 +40,18 @@ export default function ItemList({ items }) {
   return (
     <div>
       <div className="flex justify-center items-center gap-1 m-4">
-        <h1 className="text-m text-gray-200 mr-1">My List: </h1>
+        <h1 className="text-m text-white mr-1">Sort list by: </h1>
 
         <button onClick={() => setSortBy("name")}
           className={`text-sm px-2 py-1 rounded-md
-          ${sortBy === "name" ? "bg-blue-500 text-white" : "bg-white text-black"}`}>
-            Sort by Name
+          ${sortBy === "name" ? "bg-pink-500 text-white" : "bg-white text-black"}`}>
+            Name
         </button>
 
         <button onClick={() => setSortBy("category")}
           className={`text-sm px-2 py-1 rounded-md
-          ${sortBy === "category" ? "bg-blue-500 text-white" : "bg-white text-black"}`}>
-            Sort by Category
+          ${sortBy === "category" ? "bg-pink-500 text-white" : "bg-white text-black"}`}>
+            Category
         </button>
       </div>
 

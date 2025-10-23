@@ -22,10 +22,10 @@ export default function Page() {
       <main
         className="relative min-h-screen bg-cover bg-center"
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
 
         <div className="relative z-10 p-6">
-          <h1 className="text-5xl font-bold text-center mb-6 text-white">
+          <h1 className="text-5xl font-bold font-serif text-center mb-6 text-white">
             ShopMe<sup>©</sup>
           </h1>
 

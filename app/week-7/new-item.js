@@ -39,26 +39,26 @@ export default function NewItem({ onAddItem }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center bg-black/65 rounded-lg shadow-md py-3 px-8 mx-40">
+    <form onSubmit={handleSubmit} className="flex flex-col items-center bg-black/65 rounded-lg shadow-md py-3 px-4 mx-40">
     
-      <div className="flex flex-col items-center gap-4 w-full rounded py-2 px-8">   
+      <div className="flex flex-col items-center gap-2 w-full rounded py-2 px-5">   
         <div className="w-full">
-          <label className="text-white mb-1">Name</label>
+          <label className="text-white">Name</label>
           <input
             type="text"
             value={name}
             onChange={(event) => setName(event.target.value)}
             required
             placeholder="Enter item name"
-            className="text-gray-300 bg-white/10 w-full border border-gray-300 rounded px-3 py-2"
+            className="text-gray-300 bg-white/10 w-full border border-gray-300 rounded px-3 py-1.5"
           />
         </div>
         
-        <p className="text-white">Quantity: {quantity}</p>
-        <div className="flex flex-row gap-3">
+        <p className="text-white mt-2">Quantity</p>
+        {/* <div className="flex flex-row gap-3">
           <button
             type="button"
-            className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-800 disabled:bg-gray-400 text-white text-xl font-bold rounded-full"
+            className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-700 disabled:bg-gray-400 text-white text-xl font-bold rounded-full"
             onClick={decrement}
             disabled={quantity === 1}>
             -
@@ -66,7 +66,7 @@ export default function NewItem({ onAddItem }) {
 
           <button
             type="button"
-            className="w-12 h-12 flex items-center justify-center bg-blue-500 hover:bg-blue-700 disabled:bg-blue-300 text-white text-xl font-bold rounded-full"
+            className="w-12 h-12 flex items-center justify-center bg-purple-600 hover:bg-purple-700 disabled:bg-blue-300 text-white text-xl font-bold rounded-full"
             onClick={increment}
             disabled={quantity === 20}>
             +
@@ -75,6 +75,32 @@ export default function NewItem({ onAddItem }) {
 
         <div>
           <p className="text-sm italic text-gray-400">Allowed range: 1–20</p>
+        </div> */}
+
+        <div className="flex flex-row items-center gap-3">
+          <button
+            type="button"
+            className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-700 disabled:bg-gray-500 text-white text-xl font-bold rounded-full"
+            onClick={decrement}
+            disabled={quantity === 1}
+          >
+            -
+          </button>
+
+          <span className="font-mono text-white text-3xl w-10 font-medium text-center">{quantity}</span>
+
+          <button
+            type="button"
+            className="w-12 h-12 flex items-center justify-center bg-sky-500 hover:bg-sky-700 disabled:bg-sky-600 text-white text-xl font-bold rounded-full"
+            onClick={increment}
+            disabled={quantity === 20}
+          >
+            +
+          </button>
+        </div>
+
+        <div>
+          <p className="text-xs italic text-gray-400 mt-1">Allowed range: 1–20</p>
         </div>
 
         <div className="w-full">
@@ -98,8 +124,8 @@ export default function NewItem({ onAddItem }) {
           </select>
         </div>
 
-        <button type="submit" className="mt-2 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">
-          Submit
+        <button type="submit" className="font-m mt-2 bg-purple-600 hover:bg-purple-700 text-white font-medium py-1 px-6 rounded-3xl">
+          Add New Item
         </button>
       </div>
 

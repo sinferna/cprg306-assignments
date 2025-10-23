@@ -6,7 +6,6 @@ export default function Item({ name, quantity, category }) {
         <p>Quantity: {quantity}</p>
         <p>Category: {category}</p>
       </li>
-
   );
 
 }

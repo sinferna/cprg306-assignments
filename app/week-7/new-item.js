@@ -77,30 +77,30 @@ export default function NewItem({ onAddItem }) {
           <p className="text-sm italic text-gray-400">Allowed range: 1–20</p>
         </div>
 
-      <div className="w-full">
-        <label className="block text-white mb-1">Category</label>
-        <select
-          value={category}
-          onChange={(event) => setCategory(event.target.value)}
-          className="text-gray-300 bg-black/85 w-full border border-gray-300 rounded px-3 py-2"
-        >
-          <option value="Produce">Produce</option>
-          <option value="Dairy">Dairy</option>
-          <option value="Bakery">Bakery</option>
-          <option value="Meat">Meat</option>
-          <option value="Frozen Foods">Frozen Foods</option>
-          <option value="Canned Goods">Canned Goods</option>
-          <option value="Dry Goods">Dry Goods</option>
-          <option value="Beverages">Beverages</option>
-          <option value="Snacks">Snacks</option>
-          <option value="Household">Household</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
+        <div className="w-full">
+          <label className="block text-white mb-1">Category</label>
+          <select
+            value={category}
+            onChange={(event) => setCategory(event.target.value)}
+            className="text-gray-300 bg-black/85 w-full border border-gray-300 rounded px-3 py-2"
+          >
+            <option value="Produce">Produce</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Bakery">Bakery</option>
+            <option value="Meat">Meat</option>
+            <option value="Frozen Foods">Frozen Foods</option>
+            <option value="Canned Goods">Canned Goods</option>
+            <option value="Dry Goods">Dry Goods</option>
+            <option value="Beverages">Beverages</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Household">Household</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
 
-      <button type="submit" className="mt-2 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">
-        Submit
-      </button>
+        <button type="submit" className="mt-2 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded">
+          Submit
+        </button>
       </div>
 
     </form>

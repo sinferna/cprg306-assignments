@@ -39,7 +39,7 @@ export default function NewItem({ onAddItem }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center bg-black/65 rounded-lg shadow-md py-3 px-4 mx-40">
+    <form onSubmit={handleSubmit} className="flex flex-col items-center bg-black/65 rounded-lg shadow-md py-3 px-4">
     
       <div className="flex flex-col items-center gap-2 w-full rounded py-2 px-5">   
         <div className="w-full">
@@ -55,28 +55,6 @@ export default function NewItem({ onAddItem }) {
         </div>
         
         <p className="text-white mt-2">Quantity</p>
-        {/* <div className="flex flex-row gap-3">
-          <button
-            type="button"
-            className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-700 disabled:bg-gray-400 text-white text-xl font-bold rounded-full"
-            onClick={decrement}
-            disabled={quantity === 1}>
-            -
-          </button>
-
-          <button
-            type="button"
-            className="w-12 h-12 flex items-center justify-center bg-purple-600 hover:bg-purple-700 disabled:bg-blue-300 text-white text-xl font-bold rounded-full"
-            onClick={increment}
-            disabled={quantity === 20}>
-            +
-          </button>
-        </div>
-
-        <div>
-          <p className="text-sm italic text-gray-400">Allowed range: 1–20</p>
-        </div> */}
-
         <div className="flex flex-row items-center gap-3">
           <button
             type="button"
@@ -124,7 +102,7 @@ export default function NewItem({ onAddItem }) {
           </select>
         </div>
 
-        <button type="submit" className="font-m mt-2 bg-purple-600 hover:bg-purple-700 text-white font-medium py-1 px-6 rounded-3xl">
+        <button type="submit" className="font-m mt-2 bg-sky-500 hover:bg-sky-700 text-white font-medium py-1 px-6 rounded-3xl">
           Add Item
         </button>
       </div>

@@ -51,6 +51,9 @@ export default function DisplayAssignments() {
           <Link href="/week-8" className="w-full text-center bg-black/65 hover:bg-black/80 text-white py-3 rounded-sm">
             Week 8
           </Link>
+                    <Link href="/week-9" className="w-full text-center bg-black/65 hover:bg-black/80 text-white py-3 rounded-sm">
+            Week 9
+          </Link>
         </div>
       </div>
     </main>
